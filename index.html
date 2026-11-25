@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student portfolio introducing a first-year Computer Science and Engineering student.">
+  <title>Hrishabh Raj | Student Portfolio</title>
+  <style>
+    :root {
+      --navy: #20365f;
+      --blue: #4169a1;
+      --pale: #eef3fb;
+      --ink: #202938;
+      --muted: #647084;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, #20365f, #4169a1);
+      color: white;
+      padding: 64px 20px 54px;
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.78rem;
+      opacity: 0.85;
+    }
+    h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.15; }
+    .subtitle { margin: 14px 0 0; font-size: 1.08rem; color: #e8efff; }
+    nav {
+      background: white;
+      padding: 13px 16px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 22px;
+      box-shadow: 0 3px 14px rgba(25, 45, 80, 0.07);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a { color: var(--navy); text-decoration: none; font-weight: 700; font-size: 0.93rem; }
+    nav a:hover { color: var(--blue); }
+    main { width: min(960px, 92%); margin: 32px auto 48px; }
+    section {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 7px 25px rgba(25, 45, 80, 0.06);
+    }
+    h2 { color: var(--navy); margin: 0 0 15px; font-size: 1.45rem; }
+    h3 { margin: 0 0 6px; color: var(--navy); font-size: 1.05rem; }
+    p { margin: 0 0 10px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .tag {
+      background: var(--pale);
+      color: var(--navy);
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { background: #f8faff; border: 1px solid #e2e9f5; border-radius: 12px; padding: 18px; }
+    .label { color: var(--muted); font-size: 0.9rem; margin-bottom: 4px; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+    .contact-links a {
+      display: inline-block; text-decoration: none; background: var(--navy);
+      color: white; padding: 10px 15px; border-radius: 8px; font-weight: 700;
+    }
+    .contact-links a:hover { background: var(--blue); }
+    footer { text-align: center; padding: 20px; color: var(--muted); font-size: 0.88rem; }
+    @media (max-width: 600px) {
+      header { padding: 48px 18px 40px; }
+      section { padding: 21px; }
+      .cards { grid-template-columns: 1fr; }
+      nav { gap: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <p class="eyebrow">Student Portfolio</p>
+    <h1>Hrishabh Raj</h1>
+    <p class="subtitle">First-Year B.Tech Student · Computer Science &amp; Engineering</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I’m Hrishabh Raj, a first-year Computer Science and Engineering student at Lovely Professional University. I’m beginning my journey in software development and currently learning Python programming and HTML.</p>
+      <p>I enjoy exploring how technology works and aim to build useful projects, improve my problem-solving skills, and keep learning new tools.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>B.Tech — Computer Science and Engineering</h3>
+        <p>Lovely Professional University</p>
+        <p class="label">First year · 2026-2030: <strong></strong></p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills I’m Learning</h2>
+      <p>These are my current learning areas. I’ll update this section as I gain more experience.</p>
+      <div class="tag-list">
+        <span class="tag">Python — Beginner</span>
+        <span class="tag">HTML — Beginner</span>
+        <span class="tag">Problem-solving — Developing</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>I’m working toward building my first projects. The ideas below are planned projects, not completed work yet.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Personal Portfolio Website</h3>
+          <p class="label">HTML · Future improvement: CSS</p>
+          <p>A webpage to introduce myself, share my education and skills, and showcase future projects.</p>
+          <span class="tag">Planned</span>
+        </article>
+        <article class="card">
+          <h3>Python Calculator</h3>
+          <p class="label">Python</p>
+          <p>A beginner program for addition, subtraction, multiplication, and division to practise input, operators, and conditions.</p>
+          <span class="tag">Planned</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>I’m happy to connect about learning, student projects, and technology.</p>
+      <p><strong>Email:</strong> hrishavshriwastwa@gmail.com</p>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <p class="label" style="margin-top:12px;">Replace these links with your own profile URLs. Avoid publishing your personal phone number on a public website.</p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Hrishabh Raj · Student Portfolio</footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
